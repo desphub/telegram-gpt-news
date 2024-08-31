@@ -1,4 +1,5 @@
-const { parsed: { TELEGRAM_TOKEN, OPENAI_API_KEY }, } = require("dotenv").config();
+const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY
 
 const TelegramBot = require('node-telegram-bot-api');
 const OpenAI = require('openai');
